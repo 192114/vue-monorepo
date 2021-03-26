@@ -1,0 +1,12 @@
+dependencies:
+  vue-router: 4.0.5
+lockfileVersion: 5.2
+packages:
+  /vue-router/4.0.5:
+    dev: false
+    peerDependencies:
+      vue: ^3.0.0
+    resolution:
+      integrity: sha512-AQq+pllb6FCc7rS6vh4PPcce3XA1jgK3hKNkQ4hXHwoVN7jOeAOMKCnX7XAX3etV9rmN7iNW8iIwgPk95ckBjw==
+specifiers:
+  vue-router: ^4.0.5
