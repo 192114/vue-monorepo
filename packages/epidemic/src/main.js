@@ -8,6 +8,7 @@ import World from './pages/World.vue';
 import Yuge from './pages/Yuge.vue';
 
 import './assets/css/global.css';
+import './assets/css/common.css';
 
 const app = createApp(App);
 

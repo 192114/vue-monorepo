@@ -1,12 +1,56 @@
 dependencies:
+  '@antv/f2': 3.8.6
   '@rush-temp/epidemic': file:projects/epidemic.tgz
   '@vitejs/plugin-vue': 1.1.5_@vue+compiler-sfc@3.0.7
   '@vue/compiler-sfc': 3.0.7_vue@3.0.7
+  axios: 0.21.1
   vite: 2.1.3
   vue: 3.0.7
   vue-router: 4.0.5_vue@3.0.7
 lockfileVersion: 5.2
 packages:
+  /@antv/adjust/0.1.1:
+    dependencies:
+      '@antv/util': 1.3.1
+    dev: false
+    resolution:
+      integrity: sha512-9FaMOyBlM4AgoRL0b5o0VhEKAYkexBNUrxV8XmpHU/9NBPJONBOB/NZUlQDqxtLItrt91tCfbAuMQmF529UX2Q==
+  /@antv/f2/3.8.6:
+    dependencies:
+      '@antv/adjust': 0.1.1
+      '@antv/scale': 0.3.9
+      '@antv/util': 2.0.13
+      '@babel/runtime': 7.13.10
+      '@types/hammerjs': 2.0.39
+      hammerjs: 2.0.8
+      type-fest: 0.15.1
+    dev: false
+    resolution:
+      integrity: sha512-i+lipSuMQAX+VRr3bx4vqDR8GEeMIt2cvdSbVu1jtKVnor7xfNBYswJByF9EFNm5nr3rS2YuxG+zn1hOpMSdRw==
+  /@antv/gl-matrix/2.7.1:
+    dev: false
+    resolution:
+      integrity: sha512-oOWcVNlpELIKi9x+Mm1Vwbz8pXfkbJKykoCIOJ/dNK79hSIANbpXJ5d3Rra9/wZqK6MC961B7sybFhPlLraT3Q==
+  /@antv/scale/0.3.9:
+    dependencies:
+      '@antv/util': 2.0.13
+      fecha: 4.2.1
+      tslib: 2.2.0
+    dev: false
+    resolution:
+      integrity: sha512-m56Rs4Zta7XnuF+aNbJXMsgBqATO1M4kvu+dEmhzLYsPK5D3dHpJTOGh/Zy55eirekb9F7jiu29SJqPNnhxq+g==
+  /@antv/util/1.3.1:
+    dependencies:
+      '@antv/gl-matrix': 2.7.1
+    dev: false
+    resolution:
+      integrity: sha512-cbUta0hIJrKEaW3eKoGarz3Ita+9qUPF2YzTj8A6wds/nNiy20G26ztIWHU+5ThLc13B1n5Ik52LbaCaeg9enA==
+  /@antv/util/2.0.13:
+    dependencies:
+      tslib: 2.2.0
+    dev: false
+    resolution:
+      integrity: sha512-mfYL7K8XJIeDmal33K+6abr8Yb526YXKg5XQlddNo+X1Doll+gun6HxnbdySoLv21vW4bLkcbVPjqxWl7ZJAFA==
   /@babel/helper-validator-identifier/7.12.11:
     dev: false
     resolution:
@@ -18,6 +62,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-4T7Pb244rxH24yR116LAuJ+adxXXnHhZaLJjegJVKSdoNCe4x1eDBaud5YIcQFcqzsaD5BHvJw5BQ0AZapdCRw==
+  /@babel/runtime/7.13.10:
+    dependencies:
+      regenerator-runtime: 0.13.7
+    dev: false
+    resolution:
+      integrity: sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
   /@babel/types/7.13.12:
     dependencies:
       '@babel/helper-validator-identifier': 7.12.11
@@ -26,6 +76,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-K4nY2xFN4QMvQwkQ+zmBDp6ANMbVNw6BbxWmYA4qNjhR9W+Lj/8ky5MEY2Me5r+B2c6/v6F53oMndG+f9s3IiA==
+  /@types/hammerjs/2.0.39:
+    dev: false
+    resolution:
+      integrity: sha512-lYR2Y/tV2ujpk/WyUc7S0VLI0a9hrtVIN9EwnrNo5oSEJI2cK2/XrgwOQmXLL3eTulOESvh9qP6si9+DWM9cOA==
   /@vitejs/plugin-vue/1.1.5_@vue+compiler-sfc@3.0.7:
     dependencies:
       '@vue/compiler-sfc': 3.0.7_vue@3.0.7
@@ -109,6 +163,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-dn5FyfSc4ky424jH4FntiHno7Ss5yLkqKNmM/NXwANRnlkmqu74pnGetexDFVG5phMk9/FhwovUZCWGxsotVKg==
+  /axios/0.21.1:
+    dependencies:
+      follow-redirects: 1.13.3
+    dev: false
+    resolution:
+      integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   /big.js/5.2.2:
     dev: false
     resolution:
@@ -156,6 +216,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
+  /fecha/4.2.1:
+    dev: false
+    resolution:
+      integrity: sha512-MMMQ0ludy/nBs1/o0zVOiKTpG7qMbonKUzjJgQFEuvq6INZ1OraKPRAWkBq5vlKLOUMpmNYG1JoN3oDPUQ9m3Q==
+  /follow-redirects/1.13.3:
+    dev: false
+    engines:
+      node: '>=4.0'
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    resolution:
+      integrity: sha512-DUgl6+HDzB0iEptNQEXLx/KhTmDb8tZUHSeLqpnjpknR70H0nC2t9N73BK6fN4hOvJ84pKlIQVQ4k5FFlBedKA==
   /fsevents/2.3.2:
     dev: false
     engines:
@@ -175,6 +250,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-kPCHWa1m9wGG/OwQpeweTwM/PYiQLrUIxXbt/P4Nic3LbGjCP0YwrALHW1uNLKZ0LIMg+RF+XRlj2ekT9ZlZAQ==
+  /hammerjs/2.0.8:
+    dev: false
+    engines:
+      node: '>=0.8.0'
+    resolution:
+      integrity: sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
   /has/1.0.3:
     dependencies:
       function-bind: 1.1.1
@@ -355,6 +436,10 @@ packages:
       node: ^10 || ^12 || >=14
     resolution:
       integrity: sha512-1F0Xb2T21xET7oQV9eKuctbM9S7BC0fetoHCc4H13z0PT6haiRLP4T0ZY4XWh7iLP0usgqykT6p9B2RtOf4FPw==
+  /regenerator-runtime/0.13.7:
+    dev: false
+    resolution:
+      integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
   /resolve/1.20.0:
     dependencies:
       is-core-module: 2.2.0
@@ -391,6 +476,16 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
+  /tslib/2.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
+  /type-fest/0.15.1:
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-n+UXrN8i5ioo7kqT/nF8xsEzLaqFra7k32SEsSPwvXVGyAcRgV/FUQN/sgfptJTR1oRmmq7z4IXMFSM7im7C9A==
   /uniq/1.0.1:
     dev: false
     resolution:
@@ -435,22 +530,26 @@ packages:
       integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
   file:projects/epidemic.tgz:
     dependencies:
+      '@antv/f2': 3.8.6
       '@vitejs/plugin-vue': 1.1.5_@vue+compiler-sfc@3.0.7
       '@vue/compiler-sfc': 3.0.7_vue@3.0.7
+      axios: 0.21.1
       vite: 2.1.3
       vue: 3.0.7
       vue-router: 4.0.5_vue@3.0.7
     dev: false
     name: '@rush-temp/epidemic'
     resolution:
-      integrity: sha512-lCQWBw95rwO5QcbUUdfZGMG3c6D1/FF+xNNYDg26gowjtPjMsiOcUvKu4i5Vkz/yf13NJ+LZ1jv3hUeLjMPutw==
+      integrity: sha512-3vHhkFaX14iCK64jn2PoaE1LVYp4xz4PSwOojFBewhcMRdzXpc7hH98cNTgLUlaudDW8CeiJvRTCbw5IHx/QeQ==
       tarball: file:projects/epidemic.tgz
     version: 0.0.0
 registry: ''
 specifiers:
+  '@antv/f2': ^3.8.6
   '@rush-temp/epidemic': file:./projects/epidemic.tgz
   '@vitejs/plugin-vue': ^1.1.5
   '@vue/compiler-sfc': ^3.0.5
+  axios: ^0.21.1
   vite: ^2.1.0
   vue: ^3.0.5
   vue-router: ^4.0.5

@@ -42,8 +42,21 @@ export default {
   },
   methods: {
     changeTab(cur) {
-      console.log(cur);
       this.$router.push(cur);
+
+      this.tabList = this.tabList.map((item) => {
+        if (item.path === cur) {
+          return {
+            ...item,
+            active: true
+          };
+        }
+
+        return {
+          ...item,
+          active: false
+        };
+      });
     }
   }
 };
