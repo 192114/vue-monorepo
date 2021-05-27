@@ -2,7 +2,7 @@
   <li class="li-item" v-bind:class="{ line: listItem.isComplete }">
     <span>{{ listItem.content }}</span>
     <button v-on:click="onComplete">
-      {{ listItem.isComplete ? '取消完成' : '完成' }}
+      {{ buttonVal }}
     </button>
   </li>
 </template>
@@ -13,6 +13,11 @@ export default {
   methods: {
     onComplete() {
       this.$emit('changeComplete', this.listItem);
+    }
+  },
+  computed: {
+    buttonVal() {
+      return this.listItem.isComplete ? '取消完成' : '完成';
     }
   }
 };
